@@ -13,7 +13,7 @@
   - Lister les taches d'un carnet
 
 ## Préalables
-  - Installer npm (npm init)
+  - Initialiser npm (npm init)
 ## Implémentation de netlify functions
   1. Installer netlify-lambda: **npm install netlify-lambda**
   2. Ajout des scripts:
@@ -35,8 +35,12 @@ exports.handler = (event, context, callback) => {
  7. Renommer le fichier téléchargé et le mettre dans le projet (en le mettant dans le git ignore)
  8. Inclure __firebase-admin__ à l'endroit où on veut l'utiliser
  9. Inclure le fichier contenant les configuration du __service account__
- 10. Installer firebase __npm i @firebase/app__
+ 10. Installer __webpack-node-externals__
+ 11. Créer un fichier webpack.functions.js pour intitialiser webpack
+
 ## Design des pages avec tailwind css
+ 1. Utilisation de tailwindCss
+
 
 ## Remarques
 - Chaque fonction est dans son propre fichier

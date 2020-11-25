@@ -4,21 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lambda-serve": "netlify-lambda serve functions",
-    "lambda-build": "netlify-lambda build functions",
-    "watch": "npm-watch"
-  },
-  "watch": {
-    "test": "{functions}/*.js"
+    "lambda-serve": "netlify-lambda serve functions -c webpack.functions.js",
+    "lambda-build": "netlify-lambda build functions -c webpack.functions.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@firebase/app": "^0.6.13",
-    "firebase-admin": "^9.4.1",
+    "firebase-admin": "9.0.0",
     "netlify-lambda": "^2.0.1",
-    "npm-watch": "^0.7.0"
+    "webpack-node-externals": "^2.5.2"
   }
 }
